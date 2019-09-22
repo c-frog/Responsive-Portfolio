@@ -1,0 +1,237 @@
+
+/*header*/
+
+.header {
+    background-color: #ffffff;
+    border: 3px solid #cccccc;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    display: flex;
+    justify-content: space-around;
+    }
+    .name {
+        background-color: #4aaaa5; 
+        color: white;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        text-align: left;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+    nav {
+        display: flex;
+    }
+    ul {
+        display: flex;
+        padding: 10px 0px;
+        text-align: center;
+        align-items: center;
+    }
+        li {
+            list-style: none;
+            float: right;
+            align-items: center;
+            margin-left: 15px;
+            border-right: .5px solid #777777;
+            padding-right: 15px; 
+        }
+        li:last-child{
+            border-right: none;
+        }
+            a {
+                text-decoration: inherit;
+                color: #777777;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+            }
+/* MAIN BODY */ 
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url("leaves-pattern.png");
+    margin: 0px 0px 0px 0px;
+}
+    
+/* ABOUT ME PAGE */
+.bodycontainer {
+    border: 1px solid #cccccc;
+    background-color: #ffffff;
+    margin: 5% 14% 40% 14%;
+    color: #777777;
+    }
+    h2 {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        margin: 3%;
+        color: #4aaaa5;
+        border: 2px solid #cccccc;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        padding: 0px 0px 25px 0px;
+    }
+    img {
+        padding: 0px 0px 15px 0px;
+        margin: 10px 20px 0px 0px;
+    }
+    p {
+        text-align: left;
+    }
+    .bio {
+        margin: 10px 3% 40px 3%;
+        overflow: auto;
+    }
+
+
+/* PORTFOLIO PICTURES */
+
+#portpics {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* vertical-align: middle;
+    float: left; */
+    }
+    
+    .pic {
+        float: left;
+        width: 50%;
+        display: block;
+    }
+    img {
+        float: left;
+    }
+        .text {
+            position: absolute;
+            text-align: center;
+            margin-top: 3%;
+            background: #4aaaa5;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            display: block;
+        }
+        #yellowstone {
+            width: 20.25%;
+            margin-top: 5%;
+        }
+        
+        #river {
+            width: 20.25%;
+            margin-top: 7%;
+        }
+        
+        #starbar {
+            width: 20.25%;
+            margin-top: 7%;
+        }
+
+        #tree {
+            width: 20.25%;
+            margin-top: 7%;
+        }
+    /* CONTACT LINK */
+
+
+    #contacth1 {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        margin: 5%;
+        color: #4aaaa5;
+    }
+    form {
+        padding: 0px 0px 15px 0px;
+        margin: 10px 3% 40px 3%;
+        color: #777777;
+        font-size: 12pt;
+    }
+        input {
+            width: 100%;
+            padding: 5px 0px 5px 0px;
+            margin: 3px 0px 10px 0px;
+        }
+        #message {
+            width: 100.3%;
+            height: 200px;
+            padding: 5px 0px 5px 0px;
+            margin: 3px 0px 10px 0px;
+            border: solid .5px lightgrey;
+        }
+
+
+
+/* FOOTER */
+.footer {
+    background: #666666;
+    border: 3px solid #4aaaa5;
+    clear: both;
+    text-align: center;
+    font-size: 9pt;
+    padding: 15px;
+    border-right: none;
+    border-bottom: none;
+    border-left: none;
+    position: sticky;
+    bottom: 0;
+    width: 100%; 
+}
+
+
+
+/* MEDIA QUERIES */
+
+
+@media screen and (max-width: 980px){
+    .bodycontainer {
+        margin: 2% 25% 27% 4%;
+}
+    .name {
+        margin-left: -8%;
+    }
+    #portpics {
+        height: 38em;
+    }
+    .pic {
+        width: 90%;
+    }
+    .text {
+        position: absolute;
+        width: 90%;
+    }
+}
+
+
+@media screen and (max-width: 768px){
+    .bodycontainer {
+        margin: 3% 3% 44% 3%;
+    }
+    .name {
+        margin-left: -9%;
+    }
+    #porpics {
+        height: 20em;
+    }
+    .pic {
+        width: 50%;
+    }
+    .text {
+        position: relative;
+    }
+}
+
+@Media screen and (max-width: 640px){
+    .header {
+        display: block;
+}
+    .name {
+        text-align: center;
+        padding-top: 1px;
+        padding-bottom: 1px;
+        padding-left: 68px;
+    }
+    .links {
+        justify-content: center;
+    }
+    #portpics {
+        display: grid;
+    }
+    .pic {
+        width: 200%;
+    }
+}
+
