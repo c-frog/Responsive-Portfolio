@@ -38,7 +38,7 @@
         li:last-child{
             border-right: none;
         }
-            a {
+            .navlinks {
                 text-decoration: inherit;
                 color: #777777;
                 font-family: Georgia, 'Times New Roman', Times, serif;
@@ -68,10 +68,10 @@ body {
         border-right: none;
         padding: 0px 0px 25px 0px;
     }
-    img {
-        padding: 0px 0px 15px 0px;
-        margin: 10px 20px 0px 0px;
-    }
+    /* img { */
+        /* padding: 0px 0px 15px 0px; */
+        /* margin: 10px 20px 0px 0px; */
+    /* } */
     p {
         text-align: left;
     }
@@ -80,15 +80,25 @@ body {
         overflow: auto;
     }
 
-
+.projectImg {
+    width: 350px;
+}
+.pageLink {
+    position: absolute;
+    z-index: 2;
+    margin: 4%;
+    color: black;
+}
 /* PORTFOLIO PICTURES */
 
+
+/* 
 #portpics {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    /* vertical-align: middle;
-    float: left; */
+    vertical-align: middle;
+    float: left;
     }
     
     .pic {
@@ -125,7 +135,7 @@ body {
         #tree {
             width: 20.25%;
             margin-top: 7%;
-        }
+        } */
     /* CONTACT LINK */
 
 
@@ -166,7 +176,7 @@ body {
     border-right: none;
     border-bottom: none;
     border-left: none;
-    position: sticky;
+    position: absolute;
     bottom: 0;
     width: 100%; 
 }
