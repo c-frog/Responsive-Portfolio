@@ -80,14 +80,33 @@ body {
         overflow: auto;
     }
 
+
+.projects {
+    display: flex;
+    align-items: center;
+    margin: 2%;
+    padding: 3%;
+    border: 1px solid #cccccc;
+    background-color: whitesmoke;
+}
 .projectImg {
     width: 350px;
+    border: 1px solid #a0a0a0;
 }
 .pageLink {
-    position: absolute;
     z-index: 2;
     margin: 4%;
     color: black;
+    text-decoration: inherit;
+                color: #777777;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.gitLink {
+    text-align: center;
+    font-size: 16pt;
+    margin-bottom: 5%;
+
 }
 /* PORTFOLIO PICTURES */
 
@@ -176,7 +195,7 @@ body {
     border-right: none;
     border-bottom: none;
     border-left: none;
-    position: absolute;
+    position: sticky;
     bottom: 0;
     width: 100%; 
 }
@@ -203,6 +222,12 @@ body {
         position: absolute;
         width: 90%;
     }
+    
+    .projects {
+        display: grid;
+        float: left;
+        text-align: left;
+    }
 }
 
 
@@ -221,6 +246,12 @@ body {
     }
     .text {
         position: relative;
+    }
+    
+    .projects {
+        display: grid;
+        float: left;
+        text-align: left;
     }
 }
 
@@ -245,3 +276,17 @@ body {
     }
 }
 
+@media screen and (max-width: 375px) {
+    .header {
+        width: 102%;
+    }
+    .projectImg {
+        width: 99%;
+    }
+    .projects {
+        text-align: center;;
+    }
+    body {
+        width: 102%;
+    }
+}
